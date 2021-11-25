@@ -1,0 +1,33 @@
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <table class="table table-striped table-bordered table-hover">
+                <thead clas="thead" class="table-primary" style="color: black" >
+                    <tr>                    
+                        <th scope="col" >#</th>
+                        <th scope="col">Survey Name</th>
+                        <th scope="col">Answer 1</th>
+                        <th scope="col">Answer 2</th>
+                        <th scope="col">Answer 3</th>
+                        <th scope="col">Answer 4</th>
+                        <th scope="col">Answer 5</th>
+                    </tr>
+                </thead>
+
+                <tbody>   
+                    <% for(let count=0; count < ResponsesList.length; count++) { %>
+                        <tr>
+                            <th scope="row"><%= count + 1 %></th>
+                            <td><%= ResponsesList[count].name %></td>
+                            <td><%= ResponsesList[count].question1 %></td>
+                            <td><%= ResponsesList[count].question2 %></td>
+                            <td><%= ResponsesList[count].question3 %></td>
+                            <td><%= ResponsesList[count].question4 %></td>
+                            <td><%= ResponsesList[count].question5 %></td>
+                        </tr>               
+                    <% } %>    
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

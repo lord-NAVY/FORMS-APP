@@ -1,0 +1,56 @@
+
+
+    <body class="homepage" mb-6>
+
+        <center><h1 class="h1"><i class="fab fa-symfony fa-lg"></i> Survey Factory</h1></center>
+        
+        <p class="line-1 anim-typewriter"> A global leader in survey software. 20 million questions answered daily.</p>
+  <div class="row">
+        <div class="col">
+<div class="offset-md-3 col-md-6">
+            <table class="table table-striped table-bordered table-hover bg-light">
+                <thead clas="thead" class="table-primary" style="color: black" >
+                    <tr>
+                        <th scope="col" >#</th>
+                        <th scope="col">Survey Name</th>
+                        <th scope="col">Status</th>
+                        <th scope="col"></th>
+                       
+                    </tr>
+                </thead>            
+            
+                <tbody>                
+
+                    <% for(let count=0; count < surveys.length; count++) { %>            
+                        
+                    <% if (surveys[count].isActive===true) { %>
+
+                        <tr>
+                            <th scope="row"><%= count + 1 %></th>
+                            <td><%= surveys[count].name %></td>
+                            <td>
+                                <% if (surveys[count].isActive===true) { %>
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" role="switch" checked disabled>                             
+                                </div>
+                                <% } else {%> 
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" role="switch"  disabled>                             
+                                </div>
+                                <%}%>
+                            </td>
+
+                            <td class="text-centre col-1">                            
+                                <a href="/response/<%= surveys[count]._id %>" class="btn btn-primary btn-sm">
+                                Respond </a>
+                            </td>
+                        </tr>
+                    <% } %>    
+                    <% } %>    
+                </tbody>
+
+            </table>
+        </div>        
+        </div>
+    </body>
+

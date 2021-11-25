@@ -1,0 +1,22 @@
+{
+
+    "Survey":
+    [
+        { "name": "Factory","owner": "kediya", "id": 2,
+             "isActive": true , "startDate": "2021-11-13", "endDate": "2021-11-20" , 
+            "question1":"How are you", "question1option1": "good", "question1option2": "ok",
+            "question1option3": "better","question1option4": "alright" ,
+            "question2":"where do you live", "question2option1": "india", "question2option2": "usa",
+            "question2option3": "canada","question2option4": "australia" ,
+            "question3":"what is your qualification", "question3option1": "doctor", "question3option2": "ca",
+            "question3option3": "engineer","question3option4": "business-man" ,
+            "question4":"what is your favorite browser", "question4option1": "chrome", "question4option2": "firefox",
+            "question4option3": "internet explorer","question4option4": "edge" ,
+            "question5":"how many siblings you have", "question5option1": "1", "question5option2": "2",
+            "question5option3": "3","question5option4": "4" 
+        }
+
+             
+    ]
+
+}

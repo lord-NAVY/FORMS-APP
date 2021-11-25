@@ -1,0 +1,59 @@
+
+    <body class="homepage" mb-6>
+
+        <center><h1 class="h1" ><i class="fab fa-symfony fa-lg"></i> Survey Factory</h1></center>
+
+<div class="row">
+    <div class="offset-md-3 col-md-6 col-sm-12">
+          <div class="login" id="contentArea">
+              <h1 class="display-4">Please Login</h1>
+
+              <!-- message area -->
+              <% if(messages.length > 0) { %>
+              <div id="messageArea" class="alert alert-danger">
+                <%= messages %>
+              </div>
+              <% } %>
+
+              <form id="loginForm" novalidate method="POST">
+                <div class="form-group">
+                  <div class="input-group">
+                    <span class="input-group-addon">
+                      <i class="fa fa-user fa-lg">
+                      </i>
+                    </span>
+                    <input type="text" class="form-control" id="username" name="username"  required
+                    value="" placeholder="Enter your username">
+                  </div>
+                </div>
+                <br/>
+                <div class="form-group">
+                  <div class="input-group">
+                    <span class="input-group-addon">
+                      <i class="fa fa-lock fa-lg">
+                      </i>
+                    </span>
+                    <input type="password" class="form-control" id="password" name="password"  required
+                    value="" placeholder="Enter your password">
+                  </div>
+                 
+                </div>
+                                                      
+                  <div class="text-end mt-4 ">
+                    <button id="loginButton" type="submit" class="btn btn-primary"><i class="fas fa-sign-in-alt"></i> Login</button>
+                    <a href="/home" button id="cancelButton" type="reset" class="btn btn-warning"><i class="fas fa-undo"></i> Cancel</button></a>
+                  </div>
+              </form>
+             
+          </div>
+            <p class="text-center text-muted small">
+              <span class="account">Don't have an account? 
+                <a href="/register">
+                  <button id="register" type="reset" class="btn btn-outline-light btn-sm"><i class="fas fa-undo"></i> Register Here!</button>
+                </a>
+              </span>
+            </p>
+    </div>
+</div>
+
+   </body>
