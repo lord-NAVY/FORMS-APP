@@ -2,7 +2,7 @@ import mongoose from 'mongoose';
 const Schema = mongoose.Schema;
 
 const responseDatabaseSchema = new Schema({
-   
+
     name: String,
     question1: String,
     question1option1: String,
@@ -34,9 +34,9 @@ const responseDatabaseSchema = new Schema({
     question5option3: String,
     question5option4: String
 },
-{
-    collection: "Responses"
-});
+    {
+        collection: "Responses"
+    });
 
 const Model = mongoose.model("Responses", responseDatabaseSchema);
 export default Model;

@@ -6,7 +6,7 @@ import Survey from '../Models/survey';
 import response from '../Models/response';
 
 //instantiate an object of type index controller
-import {  DisplayAddPage, DisplayEditPage, DisplaySurveyPage, performDelete, ProcessAddPage, ProcessEditPage,DisplayResponsePage, ProcessResponsePage } from '../Controllers/index';
+import { DisplayAddPage, DisplayEditPage, DisplaySurveyPage, performDelete, ProcessAddPage, ProcessEditPage, DisplayResponsePage, ProcessResponsePage } from '../Controllers/index';
 //import { DisplayResponsePage, ProcessResponsePage } from '../Controllers/response';
 
 /* GET home page. */

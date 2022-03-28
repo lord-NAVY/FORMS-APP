@@ -1,1 +1,10 @@
-{"version":3,"file":"response.js","sourceRoot":"","sources":["response.ts"],"names":[],"mappings":";AAAA;;;;;;;;;;;;0BAY0B"}
+{
+    "version": 3,
+    "file": "response.js",
+    "sourceRoot": "",
+    "sources": [
+        "response.ts"
+    ],
+    "names": [],
+    "mappings": ";AAAA;;;;;;;;;;;;0BAY0B"
+}

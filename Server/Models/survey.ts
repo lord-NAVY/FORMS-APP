@@ -2,12 +2,12 @@ import mongoose from 'mongoose';
 const Schema = mongoose.Schema;
 
 const surveyDatabaseSchema = new Schema({
-    
+
     name: String,
     owner: String,
     survey_id: String,
     isActive: Boolean,
-    startDate:String,
+    startDate: String,
     endDate: String,
     question1: String,
 
@@ -40,9 +40,9 @@ const surveyDatabaseSchema = new Schema({
     question5option3: String,
     question5option4: String
 },
-{
-    collection: "Survey"
-});
+    {
+        collection: "Survey"
+    });
 
 const Model = mongoose.model("Survey", surveyDatabaseSchema);
 export default Model;

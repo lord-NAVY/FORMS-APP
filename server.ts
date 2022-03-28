@@ -35,18 +35,15 @@ server.on('listening', onListening);
  * Normalize a port into a number, string, or false.
  */
 
-function normalizePort(val:string): number | string | boolean 
-{
+function normalizePort(val: string): number | string | boolean {
   let port = parseInt(val, 10);
 
-  if (isNaN(port)) 
-  {
+  if (isNaN(port)) {
     // named pipe
     return val;
   }
 
-  if (port >= 0) 
-  {
+  if (port >= 0) {
     // port number
     return port;
   }
@@ -58,9 +55,8 @@ function normalizePort(val:string): number | string | boolean
  * Event listener for HTTP server "error" event.
  */
 
-function onError(error:createError.HttpError) {
-  if (error.syscall !== 'listen') 
-  {
+function onError(error: createError.HttpError) {
+  if (error.syscall !== 'listen') {
     throw error;
   }
 
@@ -69,8 +65,7 @@ function onError(error:createError.HttpError) {
     : 'Port ' + port;
 
   // handle specific listen errors with friendly messages
-  switch (error.code) 
-  {
+  switch (error.code) {
     case 'EACCES':
       console.error(bind + ' requires elevated privileges');
       process.exit(1);
