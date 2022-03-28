@@ -1,3 +1,3 @@
-# COMP229-F2021-Group Project
+# COMP231-W2022-Group Project
 
-This is group project for COMP229 Fall2021 Survey Factory by Group 8
+This is group project for COMP231 Winter Forms App 
